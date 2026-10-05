@@ -48,7 +48,7 @@ export default function LORPage({ onOpenDoc }) {
               Institutional Letters of Support
             </h4>
             <p style={{ fontSize: '0.875rem', color: 'var(--color-text-body)', margin: 0, lineHeight: 1.5 }}>
-              The letters below are authentic copies provided on official institutional letterhead with administrative seal and signatures. Admissions committees may contact the recommenders directly using their official institutional email and phone numbers listed.
+              The letters below are authentic copies provided on official institutional letterhead with administrative seal and signatures. Interested parties may contact the recommenders directly using their official institutional email and phone numbers listed.
             </p>
           </div>
         </div>

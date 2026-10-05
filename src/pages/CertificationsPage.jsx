@@ -209,7 +209,7 @@ export default function CertificationsPage({ onOpenDoc }) {
         <div className="academic-card" style={{ background: '#ffffff', borderColor: '#cbd5e1' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
             <ShieldCheck size={20} style={{ color: 'var(--color-accent)' }} />
-            <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Admissions Committee Verification</h4>
+            <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Certificate Verification</h4>
           </div>
           <p style={{ fontSize: '0.9rem', color: 'var(--color-text-body)', lineHeight: 1.6, margin: 0 }}>
             Every certification card connects directly to the high-resolution scanned certificate PDF issued by the respective authority (NPTEL, Oracle University, Goethe-Institut, Infosys Limited). QR codes and certificate verification numbers can be cross-checked directly via the respective issuer verification links.

@@ -16,7 +16,7 @@ export default function ContactSection() {
             Get in Touch
           </h3>
           <p style={{ color: 'var(--color-text-body)', lineHeight: 1.7, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
-            Available for inquiries regarding academic applications, postgraduate admissions, research assistantships, and collaborative technology initiatives. Official credentials and reference contacts can be verified directly.
+            Available for inquiries regarding academic collaborations, research assistantships, technology projects, and professional opportunities. Official credentials and reference contacts can be verified directly.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

@@ -54,8 +54,9 @@ export const SKILLS = {
     },
     {
       language: "English",
-      level: "Professional Working Proficiency",
-      credential: "Undergraduate instruction & technical presentations"
+      level: "B2 (CEFR)",
+      credential: "IELTS — B2 (CEFR)",
+      institution: "English Language Proficiency"
     }
   ]
 };
@@ -255,7 +256,7 @@ export const LOR_LIST = [
       email: "hod.csbs@rmkec.ac.in",
       phone: "044-67906641"
     },
-    recommendationTarget: "Post Graduate Program / Higher Studies",
+    recommendationTarget: "Academic & Professional References",
     relationshipPeriod: "Known since 2023 as Head of Department",
     keyObservations: [
       "Demonstrated a model of dedication, intellectual curiosity, and genuine commitment to learning during undergraduate education.",
@@ -276,7 +277,7 @@ export const LOR_LIST = [
       email: "cms.csbs@rmkec.ac.in",
       phone: "9962958458"
     },
-    recommendationTarget: "Postgraduate Course / Higher Studies",
+    recommendationTarget: "Academic & Professional References",
     relationshipPeriod: "Known since 2022 as student & project mentee",
     keyObservations: [
       "Served as project work mentor for the healthcare informatics project 'CareWise - A Better Guide to Healthcare'.",

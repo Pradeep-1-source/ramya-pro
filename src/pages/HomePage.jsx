@@ -13,9 +13,12 @@ import {
   BookOpen,
   Globe,
   Sparkles,
-  ShieldCheck
+  ShieldCheck,
+  Download,
+  Calendar,
+  Building
 } from 'lucide-react';
-import { PERSONAL_INFO, EDUCATION, PROJECTS, CERTIFICATIONS } from '../data/portfolioData';
+import { PERSONAL_INFO, EDUCATION, PROJECTS, CERTIFICATIONS, INTERNSHIPS } from '../data/portfolioData';
 import ContactSection from '../components/ContactSection';
 
 export default function HomePage({ onOpenDoc }) {
@@ -37,7 +40,7 @@ export default function HomePage({ onOpenDoc }) {
             {/* Academic Status Eyebrow */}
             <div className="eyebrow" style={{ marginBottom: '1.25rem' }}>
               <span className="eyebrow-dot" />
-              <span>Higher Studies Candidate • Computer Science &amp; Business Systems</span>
+              <span>Computer Science &amp; Business Systems Student</span>
             </div>
 
             {/* Main Heading */}
@@ -212,7 +215,7 @@ export default function HomePage({ onOpenDoc }) {
               Academic Portfolio Dossier
             </h2>
             <p className="academic-subtitle">
-              Structured sections detailing undergraduate education, technical development, industry internships, and formal recommendations for admissions review.
+              Structured sections detailing undergraduate education, technical development, industry internships, and formal recommendations.
             </p>
           </div>
 
@@ -287,7 +290,126 @@ export default function HomePage({ onOpenDoc }) {
           </div>
         </section>
 
-        {/* Live Project Previews on Home */}
+        {/* Internship Certificates Section */}
+        <section style={{ marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '1.75rem', flexWrap: 'wrap', gap: '1rem' }}>
+            <div>
+              <div className="eyebrow">
+                <span className="eyebrow-dot" />
+                <span>Industry Experience</span>
+              </div>
+              <h2 className="academic-title font-serif" style={{ fontSize: '2rem', margin: 0 }}>
+                Internship Certificates
+              </h2>
+            </div>
+            <Link to="/internships" className="btn btn-outline btn-sm">
+              <span>View All Internships</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+            {INTERNSHIPS.map((intern) => (
+              <div key={intern.id} className="academic-card" style={{ display: 'flex', flexDirection: 'column', padding: '2rem' }}>
+                {/* Header badges */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
+                  <span className="badge badge-accent">
+                    <Briefcase size={12} />
+                    <span>Internship</span>
+                  </span>
+                  <span className="badge badge-verified">
+                    <CheckCircle2 size={12} />
+                    <span>Certificate Verified</span>
+                  </span>
+                </div>
+
+                {/* Certificate icon area */}
+                <div style={{
+                  width: '100%',
+                  padding: '1.5rem',
+                  background: 'linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px solid var(--color-border-light)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  marginBottom: '1.25rem'
+                }}>
+                  <div style={{
+                    width: 52,
+                    height: 52,
+                    background: 'var(--color-primary)',
+                    borderRadius: 'var(--radius-sm)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <FileText size={26} color="#fff" />
+                  </div>
+                  <div>
+                    <div style={{ fontWeight: 800, fontSize: '1.05rem', color: 'var(--color-text-main)', lineHeight: 1.3 }}>
+                      {intern.role}
+                    </div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', marginTop: '0.2rem' }}>
+                      Certificate of Completion
+                    </div>
+                  </div>
+                </div>
+
+                {/* Organization & Period */}
+                <div style={{ marginBottom: '1.25rem', flex: 1 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                    <Building size={15} style={{ color: 'var(--color-accent)', flexShrink: 0 }} />
+                    <span style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--color-text-main)' }}>
+                      {intern.organization}
+                    </span>
+                  </div>
+                  {intern.organizationNote && (
+                    <div style={{ fontSize: '0.8rem', color: 'var(--color-accent)', fontWeight: 600, marginBottom: '0.4rem', paddingLeft: '1.45rem' }}>
+                      {intern.organizationNote}
+                    </div>
+                  )}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', paddingLeft: '1.45rem' }}>
+                    <Calendar size={13} style={{ color: 'var(--color-text-muted)' }} />
+                    <span style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
+                      {intern.period}
+                    </span>
+                  </div>
+                  {intern.project && (
+                    <div style={{ marginTop: '0.75rem', padding: '0.65rem 0.85rem', background: 'var(--color-accent-soft)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--color-accent-border)', fontSize: '0.8rem' }}>
+                      <span style={{ color: 'var(--color-accent)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.04em' }}>Project: </span>
+                      <span style={{ fontWeight: 700, color: 'var(--color-text-main)' }}>{intern.project}</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Action Buttons */}
+                <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: 'auto' }}>
+                  <button
+                    type="button"
+                    onClick={() => onOpenDoc(intern.pdf, `${intern.role} Certificate`, `${intern.organization} • ${intern.period}`)}
+                    className="btn btn-primary btn-sm"
+                    style={{ flex: 1, minWidth: '130px' }}
+                  >
+                    <FileText size={14} />
+                    <span>View Certificate</span>
+                  </button>
+                  <a
+                    href={intern.pdf}
+                    download
+                    className="btn btn-secondary btn-sm"
+                    title="Download certificate PDF"
+                    style={{ flex: 1, minWidth: '130px' }}
+                  >
+                    <Download size={14} />
+                    <span>Download</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
         <section style={{ marginBottom: '4rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '1.75rem', flexWrap: 'wrap', gap: '1rem' }}>
             <div>

@@ -34,11 +34,10 @@ export default function Footer() {
               Computer Science and Business Systems
             </p>
             <p style={{ color: 'var(--color-accent)', fontWeight: 600, fontSize: '0.875rem', marginBottom: '1rem' }}>
-              Academic Portfolio • Higher Studies
+              Academic Portfolio • CSBS
             </p>
             <p className="footer-brand-desc">
-              Prepared for postgraduate admissions committees, academic reviewers, and international university evaluations.
-              All credentials, certifications, and project links are backed by original academic records.
+              Explore my academic background, certifications, internship experience, achievements, and projects.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ export default function ResumePage({ onOpenDoc }) {
         <SectionHeader
           eyebrow="Official Curriculum Vitae"
           title="Curriculum Vitae / Resume"
-          subtitle="Authentic undergraduate curriculum vitae of M Ramya for higher studies and university admissions review."
+          subtitle="Official curriculum vitae of M Ramya — B.Tech. Computer Science and Business Systems student at R.M.K. Engineering College."
         />
 
         {/* Action Header Card */}

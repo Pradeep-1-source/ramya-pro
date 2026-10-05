@@ -36,7 +36,7 @@ export default function AboutPage() {
             <span>Profile Summary</span>
           </div>
           <h3 className="font-serif" style={{ fontSize: '1.65rem', marginBottom: '1rem' }}>
-            Candidate Profile
+            Student Profile
           </h3>
           <p
             style={{
@@ -61,9 +61,8 @@ export default function AboutPage() {
             <span className="badge badge-default">
               <span>Official Record: {PERSONAL_INFO.fullNameOfficial}</span>
             </span>
-            <span className="badge badge-verified">
-              <CheckCircle2 size={12} />
-              <span>Higher Studies Applicant</span>
+            <span className="badge badge-default">
+              <span>B.Tech. CSBS Student</span>
             </span>
             <Link to="/resume" className="btn btn-secondary btn-sm" style={{ marginLeft: 'auto' }}>
               <FileText size={14} />

@@ -22,7 +22,7 @@ function RouteMetaManager() {
 
   useEffect(() => {
     const titles = {
-      '/': 'M Ramya | Academic Portfolio & Higher Studies',
+      '/': 'M Ramya | Computer Science & Business Systems',
       '/about': 'About & Academic Profile | M Ramya',
       '/achievements': 'Achievements & Symposium Presentations | M Ramya',
       '/certifications': 'Certifications & Accreditations | M Ramya',
