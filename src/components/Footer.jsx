@@ -16,7 +16,8 @@ export default function Footer() {
                 style={{
                   width: 32,
                   height: 32,
-                  background: '#0f172a',
+                  background: 'linear-gradient(135deg, #0284c7 0%, #0c1a3b 100%)',
+                  border: '1px solid rgba(56, 189, 248, 0.35)',
                   borderRadius: 6,
                   color: '#fff',
                   display: 'flex',

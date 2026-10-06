@@ -165,7 +165,7 @@ export default function AchievementsPage({ onOpenDoc }) {
         </div>
 
         {/* Additional Document-Supported Academic Milestones */}
-        <section className="academic-card" style={{ background: '#ffffff' }}>
+        <section className="academic-card" style={{ background: 'var(--color-bg-card)' }}>
           <div className="eyebrow">
             <span className="eyebrow-dot" />
             <span>Document-Verified Academic Recognitions</span>

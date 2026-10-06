@@ -94,12 +94,12 @@ export default function ProjectsPage({ onOpenDoc }) {
 
               {/* Academic Evaluation / Mentor Endorsement if CareWise */}
               {project.academicEvaluation && (
-                <div style={{ marginBottom: '1.5rem', padding: '1.15rem 1.25rem', background: '#fffbeb', border: '1px solid #fde68a', borderRadius: 'var(--radius-sm)' }}>
+                <div style={{ marginBottom: '1.5rem', padding: '1.15rem 1.25rem', background: 'var(--color-honor-bg)', border: '1px solid var(--color-honor-border)', borderRadius: 'var(--radius-sm)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-honor)', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.35rem' }}>
                     <Award size={16} />
                     <span>Faculty Evaluation &amp; Recommendation</span>
                   </div>
-                  <p style={{ fontSize: '0.9rem', color: '#78350f', lineHeight: 1.6, margin: 0 }}>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--color-text-body)', lineHeight: 1.6, margin: 0 }}>
                     {project.academicEvaluation}
                   </p>
                   <div style={{ marginTop: '0.75rem' }}>

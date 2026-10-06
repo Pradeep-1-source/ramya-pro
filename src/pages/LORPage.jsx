@@ -40,7 +40,7 @@ export default function LORPage({ onOpenDoc }) {
             boxShadow: 'var(--shadow-sm)'
           }}
         >
-          <div style={{ padding: '0.65rem', background: '#ecfdf5', borderRadius: 'var(--radius-sm)', color: '#047857' }}>
+          <div style={{ padding: '0.65rem', background: 'var(--color-verified-bg)', borderRadius: 'var(--radius-sm)', color: 'var(--color-verified)' }}>
             <ShieldCheck size={24} />
           </div>
           <div>

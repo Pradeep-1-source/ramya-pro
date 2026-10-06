@@ -4,7 +4,7 @@
 export const PERSONAL_INFO = {
   name: "M RAMYA",
   fullNameOfficial: "Ramya Muguntha Babu", // As on official Goethe Certificate
-  title: "Computer Science and Business Systems Student",
+  title: "Computer Science and Business Systems Graduate",
   degree: "B.Tech. in Computer Science and Business Systems",
   institution: "R.M.K. Engineering College",
   institutionDetails: "Autonomous Institution, Affiliated to Anna University, NAAC 'A+' Accredited, NBA Accredited",
@@ -278,13 +278,13 @@ export const LOR_LIST = [
       phone: "9962958458"
     },
     recommendationTarget: "Academic & Professional References",
-    relationshipPeriod: "Known since 2022 as student & project mentee",
+    relationshipPeriod: "Known since 2022 as graduate & project mentee",
     keyObservations: [
       "Served as project work mentor for the healthcare informatics project 'CareWise - A Better Guide to Healthcare'.",
       "Recognized for the calibre of documentation, presentation, and overall contribution, rating project performance at an 8 out of 10.",
       "Demonstrated significant growth in analytical thinking, project planning, problem-solving, and confidence.",
       "Demonstrated strong initiative by seeking out extracurricular learning opportunities and certifications alongside coursework.",
-      "Highly motivated student who embraces challenges with a positive approach and continuous self-improvement."
+      "Highly motivated graduate who embraces challenges with a positive approach and continuous self-improvement."
     ],
     pdf: "/documents/LOR SHIBA.pdf"
   }

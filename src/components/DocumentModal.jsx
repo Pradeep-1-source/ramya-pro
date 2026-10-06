@@ -86,7 +86,7 @@ export default function DocumentModal({ isOpen, onClose, docUrl, docTitle, subti
                 justifyContent: 'center',
                 padding: '2rem',
                 textAlign: 'center',
-                background: '#f8fafc',
+                background: 'var(--color-bg-subtle)',
               }}
             >
               <FileText size={48} style={{ color: 'var(--color-text-muted)', marginBottom: '1rem' }} />

@@ -32,15 +32,15 @@ export default function HomePage({ onOpenDoc }) {
           style={{
             padding: '3rem 2.5rem',
             marginBottom: '3.5rem',
-            background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)',
-            borderColor: '#cbd5e1',
+            background: 'linear-gradient(180deg, var(--color-bg-card) 0%, var(--color-bg-subtle) 100%)',
+            borderColor: 'var(--color-border-light)',
           }}
         >
           <div style={{ maxWidth: '920px' }}>
             {/* Academic Status Eyebrow */}
             <div className="eyebrow" style={{ marginBottom: '1.25rem' }}>
               <span className="eyebrow-dot" />
-              <span>Computer Science &amp; Business Systems Student</span>
+              <span>Computer Science &amp; Business Systems Graduate</span>
             </div>
 
             {/* Main Heading */}
@@ -89,7 +89,7 @@ export default function HomePage({ onOpenDoc }) {
                 gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                 gap: '1rem',
                 padding: '1.5rem',
-                background: '#ffffff',
+                background: 'var(--color-bg-subtle)',
                 border: '1px solid var(--color-border-light)',
                 borderRadius: 'var(--radius-md)',
                 marginBottom: '2.25rem',
@@ -163,7 +163,7 @@ export default function HomePage({ onOpenDoc }) {
         <section style={{ marginBottom: '3.5rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.25rem' }}>
             <div className="metric-pill">
-              <div style={{ padding: '0.75rem', background: '#eff6ff', borderRadius: 'var(--radius-sm)', color: '#1d4ed8' }}>
+              <div style={{ padding: '0.75rem', background: 'rgba(56, 189, 248, 0.15)', borderRadius: 'var(--radius-sm)', color: '#38bdf8' }}>
                 <GraduationCap size={22} />
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function HomePage({ onOpenDoc }) {
             </div>
 
             <div className="metric-pill">
-              <div style={{ padding: '0.75rem', background: '#fffbeb', borderRadius: 'var(--radius-sm)', color: '#b45309' }}>
+              <div style={{ padding: '0.75rem', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 'var(--radius-sm)', color: '#fbbf24' }}>
                 <Award size={22} />
               </div>
               <div>
@@ -183,7 +183,7 @@ export default function HomePage({ onOpenDoc }) {
             </div>
 
             <div className="metric-pill">
-              <div style={{ padding: '0.75rem', background: '#ecfdf5', borderRadius: 'var(--radius-sm)', color: '#047857' }}>
+              <div style={{ padding: '0.75rem', background: 'rgba(52, 211, 153, 0.15)', borderRadius: 'var(--radius-sm)', color: '#34d399' }}>
                 <Globe size={22} />
               </div>
               <div>
@@ -193,7 +193,7 @@ export default function HomePage({ onOpenDoc }) {
             </div>
 
             <div className="metric-pill">
-              <div style={{ padding: '0.75rem', background: '#f5f3ff', borderRadius: 'var(--radius-sm)', color: '#6d28d9' }}>
+              <div style={{ padding: '0.75rem', background: 'rgba(167, 139, 250, 0.15)', borderRadius: 'var(--radius-sm)', color: '#a78bfa' }}>
                 <ShieldCheck size={22} />
               </div>
               <div>
@@ -223,7 +223,7 @@ export default function HomePage({ onOpenDoc }) {
             {/* About Card */}
             <div className="academic-card" style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <div style={{ padding: '0.6rem', background: '#f1f5f9', borderRadius: 'var(--radius-sm)', color: 'var(--color-primary)' }}>
+                <div style={{ padding: '0.6rem', background: 'var(--color-bg-subtle)', borderRadius: 'var(--radius-sm)', color: 'var(--color-primary)' }}>
                   <GraduationCap size={20} />
                 </div>
                 <h3 style={{ fontSize: '1.2rem', margin: 0 }}>Academic Background</h3>
@@ -240,7 +240,7 @@ export default function HomePage({ onOpenDoc }) {
             {/* Projects Card */}
             <div className="academic-card" style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <div style={{ padding: '0.6rem', background: '#eff6ff', borderRadius: 'var(--radius-sm)', color: '#1d4ed8' }}>
+                <div style={{ padding: '0.6rem', background: 'rgba(56, 189, 248, 0.15)', borderRadius: 'var(--radius-sm)', color: '#38bdf8' }}>
                   <Layers size={20} />
                 </div>
                 <h3 style={{ fontSize: '1.2rem', margin: 0 }}>Projects &amp; Deployments</h3>
@@ -257,7 +257,7 @@ export default function HomePage({ onOpenDoc }) {
             {/* Certifications Card */}
             <div className="academic-card" style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <div style={{ padding: '0.6rem', background: '#fffbeb', borderRadius: 'var(--radius-sm)', color: '#b45309' }}>
+                <div style={{ padding: '0.6rem', background: 'rgba(251, 191, 36, 0.15)', borderRadius: 'var(--radius-sm)', color: '#fbbf24' }}>
                   <Award size={20} />
                 </div>
                 <h3 style={{ fontSize: '1.2rem', margin: 0 }}>Certifications</h3>
@@ -274,7 +274,7 @@ export default function HomePage({ onOpenDoc }) {
             {/* LOR Card */}
             <div className="academic-card" style={{ display: 'flex', flexDirection: 'column' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                <div style={{ padding: '0.6rem', background: '#ecfdf5', borderRadius: 'var(--radius-sm)', color: '#047857' }}>
+                <div style={{ padding: '0.6rem', background: 'rgba(52, 211, 153, 0.15)', borderRadius: 'var(--radius-sm)', color: '#34d399' }}>
                   <FileText size={20} />
                 </div>
                 <h3 style={{ fontSize: '1.2rem', margin: 0 }}>Letters of Recommendation</h3>
@@ -327,7 +327,7 @@ export default function HomePage({ onOpenDoc }) {
                 <div style={{
                   width: '100%',
                   padding: '1.5rem',
-                  background: 'linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%)',
+                  background: 'linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-subtle) 100%)',
                   borderRadius: 'var(--radius-md)',
                   border: '1px solid var(--color-border-light)',
                   display: 'flex',

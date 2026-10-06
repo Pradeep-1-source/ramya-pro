@@ -30,13 +30,13 @@ export default function AboutPage() {
         />
 
         {/* Profile Summary Card */}
-        <section className="academic-card" style={{ marginBottom: '2.5rem', background: '#ffffff', borderColor: '#cbd5e1' }}>
+        <section className="academic-card" style={{ marginBottom: '2.5rem', background: 'var(--color-bg-card)', borderColor: 'var(--color-border-light)' }}>
           <div className="eyebrow" style={{ marginBottom: '0.75rem' }}>
             <span className="eyebrow-dot" />
             <span>Profile Summary</span>
           </div>
           <h3 className="font-serif" style={{ fontSize: '1.65rem', marginBottom: '1rem' }}>
-            Student Profile
+            Graduate Profile
           </h3>
           <p
             style={{
@@ -62,7 +62,7 @@ export default function AboutPage() {
               <span>Official Record: {PERSONAL_INFO.fullNameOfficial}</span>
             </span>
             <span className="badge badge-default">
-              <span>B.Tech. CSBS Student</span>
+              <span>B.Tech. CSBS Graduate</span>
             </span>
             <Link to="/resume" className="btn btn-secondary btn-sm" style={{ marginLeft: 'auto' }}>
               <FileText size={14} />
@@ -159,7 +159,7 @@ export default function AboutPage() {
             {/* Technical Skills Card */}
             <div className="academic-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <div style={{ padding: '0.6rem', background: '#eff6ff', borderRadius: 'var(--radius-sm)', color: '#1d4ed8' }}>
+                <div style={{ padding: '0.6rem', background: 'rgba(56, 189, 248, 0.15)', borderRadius: 'var(--radius-sm)', color: '#38bdf8' }}>
                   <Code2 size={20} />
                 </div>
                 <div>
@@ -198,7 +198,7 @@ export default function AboutPage() {
             {/* Professional Skills Card */}
             <div className="academic-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <div style={{ padding: '0.6rem', background: '#f5f3ff', borderRadius: 'var(--radius-sm)', color: '#6d28d9' }}>
+                <div style={{ padding: '0.6rem', background: 'rgba(167, 139, 250, 0.15)', borderRadius: 'var(--radius-sm)', color: '#a78bfa' }}>
                   <Users size={20} />
                 </div>
                 <div>
@@ -237,7 +237,7 @@ export default function AboutPage() {
         <section style={{ marginBottom: '3rem' }}>
           <div className="academic-card">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <div style={{ padding: '0.6rem', background: '#ecfdf5', borderRadius: 'var(--radius-sm)', color: '#047857' }}>
+              <div style={{ padding: '0.6rem', background: 'rgba(52, 211, 153, 0.15)', borderRadius: 'var(--radius-sm)', color: '#34d399' }}>
                 <Languages size={20} />
               </div>
               <div>
@@ -282,7 +282,7 @@ export default function AboutPage() {
         </section>
 
         {/* Call to Next Section */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', padding: '1.5rem', background: '#ffffff', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border-light)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', padding: '1.5rem', background: 'var(--color-bg-card)', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border-light)' }}>
           <div>
             <div style={{ fontWeight: 700, color: 'var(--color-text-main)', fontSize: '1rem' }}>
               Explore Achievements &amp; Certifications

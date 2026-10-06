@@ -206,7 +206,7 @@ export default function CertificationsPage({ onOpenDoc }) {
         </div>
 
         {/* Verification Callout */}
-        <div className="academic-card" style={{ background: '#ffffff', borderColor: '#cbd5e1' }}>
+        <div className="academic-card" style={{ background: 'var(--color-bg-card)', borderColor: 'var(--color-border-light)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
             <ShieldCheck size={20} style={{ color: 'var(--color-accent)' }} />
             <h4 style={{ margin: 0, fontSize: '1.1rem' }}>Certificate Verification</h4>

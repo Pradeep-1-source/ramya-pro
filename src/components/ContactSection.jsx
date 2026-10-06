@@ -5,7 +5,7 @@ import { PERSONAL_INFO } from '../data/portfolioData';
 
 export default function ContactSection() {
   return (
-    <section className="academic-card" style={{ background: '#ffffff', borderColor: '#cbd5e1' }} id="contact">
+    <section className="academic-card" style={{ background: 'var(--color-bg-card)', borderColor: 'var(--color-border-light)' }} id="contact">
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2.5rem', alignItems: 'center' }}>
         <div>
           <div className="eyebrow">
@@ -146,8 +146,8 @@ export default function ContactSection() {
         {/* Academic Profile Snapshot Box */}
         <div
           style={{
-            background: 'linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%)',
-            border: '1px solid #cbd5e1',
+            background: 'linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-subtle) 100%)',
+            border: '1px solid var(--color-border-light)',
             borderRadius: 'var(--radius-lg)',
             padding: '2rem',
           }}
@@ -161,15 +161,15 @@ export default function ContactSection() {
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.75rem' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid #e2e8f0' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border-light)' }}>
               <span style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>Degree Program</span>
               <span style={{ fontWeight: 700, color: 'var(--color-text-main)', fontSize: '0.875rem', textAlign: 'right' }}>B.Tech. CSBS (2022–2026)</span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid #e2e8f0' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border-light)' }}>
               <span style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>Cumulative GPA</span>
               <span style={{ fontWeight: 800, color: 'var(--color-primary)', fontSize: '1rem' }}>7.88 / 10.0</span>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid #e2e8f0' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '0.75rem', borderBottom: '1px solid var(--color-border-light)' }}>
               <span style={{ color: 'var(--color-text-muted)', fontSize: '0.875rem' }}>Institution Accreditation</span>
               <span style={{ fontWeight: 700, color: 'var(--color-verified)', fontSize: '0.875rem' }}>NAAC 'A+' &amp; NBA</span>
             </div>

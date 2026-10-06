@@ -23,7 +23,7 @@ export default function ResumePage({ onOpenDoc }) {
         <SectionHeader
           eyebrow="Official Curriculum Vitae"
           title="Curriculum Vitae / Resume"
-          subtitle="Official curriculum vitae of M Ramya — B.Tech. Computer Science and Business Systems student at R.M.K. Engineering College."
+          subtitle="Official curriculum vitae of M Ramya — B.Tech. Computer Science and Business Systems graduate at R.M.K. Engineering College."
         />
 
         {/* Action Header Card */}
@@ -32,13 +32,13 @@ export default function ResumePage({ onOpenDoc }) {
           style={{
             padding: '2rem 2.5rem',
             marginBottom: '2.5rem',
-            background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+            background: 'linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-subtle) 100%)',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
             gap: '1.5rem',
-            borderColor: '#cbd5e1'
+            borderColor: 'var(--color-border-light)'
           }}
         >
           <div>
@@ -86,7 +86,7 @@ export default function ResumePage({ onOpenDoc }) {
           className="academic-card"
           style={{
             padding: '1.5rem',
-            background: '#ffffff',
+            background: 'var(--color-bg-card)',
             marginBottom: '3rem',
             boxShadow: 'var(--shadow-md)'
           }}
@@ -114,7 +114,7 @@ export default function ResumePage({ onOpenDoc }) {
               height: '850px',
               borderRadius: 'var(--radius-sm)',
               overflow: 'hidden',
-              background: '#f1f5f9',
+              background: 'var(--color-bg-subtle)',
               border: '1px solid var(--color-border-light)'
             }}
           >
